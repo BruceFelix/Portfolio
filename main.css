@@ -1,31 +1,117 @@
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background-color: black; */
-    /* color: white; */
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-#welcome-section{
-    height: 100vh;
-}
-#navbar{
-    position: fixed;
-    top: 0;
-    background-color: black;
-    right: 0;
-    width: 100%;
-    padding: 20px;
-}
-#navbar a{
     color: white;
 }
-@media screen and (min-width: 600px) {
-    body{
-        background-color: grey;
-        color: black;
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
     }
+a{
+    text-decoration: none;
+}
+body{
+    background-color: black;
+}
+header{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    z-index: 100;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header p{
+    font-family: 'Monoton', cursive;
+    padding: 10px;
+    margin-left: 50px;
+    font-size: 40px;
+}
+#navbar{
+    margin: 0 30px;
+}
+#navbar a{
+    font-family:'Press Start 2P', cursive;
+    margin: 5px 10px;
+    text-transform: uppercase;
+}
+#welcome-section{
+    margin-top: 100px;
+    background: url('images/bruce-removebg-preview.png') no-repeat right;
+    height: 90vh;
+    width: 100%;
+    font-size: xx-large;
+    padding: 100px;
+    scroll-margin-top: 4em;
+    line-height: 2em;
+}
+.name {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 70%;
+    /* align-items: center; */
+}
+.name p{
+    font-family: 'Shizuru', cursive;
+    font-size: 40px;
+}
+#projects{
+    width: 100%;
+    height: max-content;
+    background-color: rgb(232, 230, 230);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    scroll-margin-top: 4em;
+}
+#projects h2{
+    color: black;
+    font-family: 'Abril Fatface', cursive;
+    margin: 20px 500px;
+    font-size: 30px;
+}
+.project-tile{
+    margin: 20px;
+    box-shadow: 6px 6px 4px 5px #111;
+    border-radius: 10px;
+    /* padding: 1px 1px; */
+}
+.project-tile:hover{
+    box-shadow: -3px -3px 4px 5px #111,5px 5px 4px 5px #111;
+    transition: .3s;
+}
+.project-tile p{
+    color: rgb(255, 255, 255);
+    background-color: rgb(63, 64, 75);
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: x-large;
+    padding: 10px;
+    border-radius: 2px;
+}
+.project-tile img{
+    width: 400px;
+    height: 300px;
+    border-radius: 2px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.communication a{
+    margin: 10px 20px;
+    font-size: 20px;
 }
