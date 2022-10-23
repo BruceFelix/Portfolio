@@ -1,8 +1,9 @@
-/* Main styles */
+/* Gobal styles */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.87);
 }
 ul{
     list-style: none;
@@ -13,7 +14,18 @@ li{
 a{
     text-decoration: none;
 }
-/* End of Main styles */
+.headers h1{
+    text-align: center;
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 35px;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.87);
+    margin: 40px;
+}
+/* End of Global styles */
 
 /* Header styles */
 
@@ -38,6 +50,7 @@ nav{
     color: #3B4A3F;
     font-size: 20px;
     font-family: Sora;
+    margin: 0 20px;
 }
 .navigation li:hover{
     color: #1a271d;
@@ -49,7 +62,8 @@ nav{
 /* Main styles */
 .banner{
     display: flex;
-    height: 500px;
+    width: 100%;
+    height: 600px;
     justify-content: space-around;
 }
 .banner-text{
@@ -59,6 +73,7 @@ nav{
 }
 .banner-text h1{
     font-size: 40px;
+    color: rgba(0, 0, 0, 0.87);
 }
 .banner img{
     height: 500px; 
@@ -86,4 +101,133 @@ nav{
     padding: 0px;
     margin: 10px;
 }
+/* Skills styles */
+#skills{
+    color: black;
+    width: 100%;
+    height: 600px;
+    padding: 20px;
+    top: 602px;
+    background: #EABD70;
+    font-family: 'Sora', sans-serif;
+}
+.skills-content{
+    display: flex ;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    color: rgba(0, 0, 0, 0.87);
+}
+.skills p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: rgba(0, 0, 0, 0.87);
+}
+.skills-list{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+    color: rgba(0, 0, 0, 0.87);
+}
+.vector{
+    background: url("/images/Vector.png") no-repeat;
+}
+/* End of Skills */
+/* Experience styles */
+#experience{
+    color: black;
+    width: 100%;
+    height: 750px;
+    padding: 40px;
+    margin: 20px 0;
+}
+.circle{
+    width: 20px;
+    height: 20px;
+    border: 2px solid  #488EFF;
+    border-radius: 50%;
+}
+.broken-line{
+    width: 1px;
+    height: 170px;
+    border: 1px dashed #488EFF;
+    margin: 0 9px ;
+}
+.experience-content{
+    display: flex;
+}
+.resume{
+    margin: 0 100px;
+    width: 100%;
+}
+.description h3{
+    color: #488EFF;
+    margin: 10px 0;
+    font-size: 16px;
+}
+.description h1 {
+    border-bottom: 1px solid #488EFF;  
+}
+.description ul{
+    margin: 10px 20px;
+    list-style: disc;
+}
+.job{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+/* End of Experience styles */
+/* Project styles */
+#projects{
+    color: black;
+    width: 100%;
+    height: 600px;
+    padding: 40px;
+}
+.projects{
+    display: flex;
+    justify-content: space-around;
+}
+.project{
+    gap: 8px;
+    width: 344px;
+    height: 320px;
+    background: #FCFDFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: justify;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+}
+.project p{
+    margin: 0 10px;
+}
+.text{
+    width: 100%;
+    height: 100px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 346px;
+    border: 2px solid;
+    border-image: linear-gradient(100deg, #009EF8, #B305B7) 3;
+}
+.project img{
+    max-width: 344px;
+    max-height: 468px;
+}
+/* End of project styles */
 /* End of main styles */
