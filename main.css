@@ -230,4 +230,72 @@ nav{
     max-height: 468px;
 }
 /* End of project styles */
+/* Education Styles */
+#education{
+    color: black;
+    width: 100%;
+    height: 600px;
+    padding: 20px;
+    top: 602px;
+    background: #EABD70;
+}
+.education{
+    display: flex;
+    justify-content: space-around;
+}
+.shule{
+    display: flex;
+    justify-content: space-evenly;
+}
+.schools{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.numbers p{
+    color: #FFF1D8;
+    font-size: 100px;
+
+}
+.the-school h1, h3, p{
+    margin: 10px;
+}
+.edu-icon{
+    background: url("/images/vector2.png") no-repeat;
+}
+.school{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* End of Education Styles */
+
 /* End of main styles */
+/* Footer Styles */
+#contacts{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.601);
+    color: white;
+    height: 150px;
+}
+.communication h2,a{
+    color: white;
+}
+.communication{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+    border-bottom: 1px solid white;
+}
+.medium{
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    padding: 5px 10px;
+}
+.medium img{
+    margin: 5px 10px 5px 0;
+}
+/* End of FooterStyles */
